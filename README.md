@@ -1,6 +1,11 @@
 
 ## This is my repo full of useful tools
 
+### _commit_and_push_by_type_by_plugins_folder_auto.ps1
+Used for pushing big folders inside the Assets/Plugins folder
+
+####
+Pushes each folder inside the plugin folder one by one and also one by one by type. This way you can push a lot of things without timeout.
 
 ### SymLink_Unity_Folder
 Hey since Android is hot stuff right now, I have pretty nice solution for everyone who wants to have one git REPO + 2 unity instances (one android, one windows)
