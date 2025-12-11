@@ -51,10 +51,32 @@ if (-NOT $has_admin_rights) {
 }
 
 # Define the path to the Unity project folder
-$path_to_stuff = "D:\UnityProjects\[PROJECT]"
+$path_to_stuff = "D:\Projects\tomplay"
 
 # Define the items to create symlinks for
-$items = @("Assets", "CI", "Doc", "Documentation", "Packages", "Plugins", "ProjectSettings", "Tools", ".editorconfig", ".gitattributes", ".gitignore", "README.md")
+$items = @(
+    ".github",
+    ".vscode",
+    "Assets", 
+    "Builds", 
+    "CI",
+    "Doc", 
+    "Documentation", 
+    "MusicSchoolsTxt", 
+    "Packages",
+    "Plugins",
+    "Plugin-Source", 
+    "ProjectSettings", 
+    "Scripts", 
+    "Tools", 
+    "UIElementsSchema", 
+    ".editorconfig", 
+    ".gitattributes",
+    ".gitignore", 
+    ".gitmodules", 
+    "README.md",
+    "Tomplay.Keystore", 
+    "packages.config")
 
 # Get the current folder path
 $this_folder = Split-Path -Parent $MyInvocation.MyCommand.Definition
