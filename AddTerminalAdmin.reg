@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenTerminalAdmin]
+@="Open Terminal as Administrator"
+"Icon"="cmd.exe"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenTerminalAdmin\command]
+@="powershell.exe -WindowStyle Hidden -Command \"Start-Process wt.exe -ArgumentList '-d \\\"%V\\\"' -Verb RunAs\""
